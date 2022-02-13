@@ -1,0 +1,18 @@
+scores = []
+num = int(input("班上人數"))
+for i in range(num):
+    score = int(input("輸入成績=>"))
+    
+low = 0
+high = 100
+total = 0
+for i in scores:
+    if i > high:
+        high = i
+    if i < low:
+        low = i
+print("總分數:",total) 
+print("low")
+print("平均為")
+print("最高分")
+print("最低分")      
